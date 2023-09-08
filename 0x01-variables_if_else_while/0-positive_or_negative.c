@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+/* more headers goes there */
 #include <time.h>
 
+
+/* betty style doc for function main goes there */
 /*
  *  main - Entry point of the program
  *
@@ -18,6 +21,7 @@ int main(void)
 	int n;
 	srand(time(0));/* Seed the random number generator with the current time*/ 
 	n = rand() - RAND_MAX / 2; /* Generate a random number between -100 and 100*/
+	/* your code goes there */
 	printf("%d is ", n);	
 	if (n > 0)
 	{
