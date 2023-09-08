@@ -4,17 +4,12 @@
 #include <time.h>
 
 
-/* betty style doc for function main goes there */
-/*
- *  main - Entry point of the program
- *
- *
- *
- *
- *
- *
- *
- * Positive, negative, zero
+/**
+ * main - Entry point of the program
+ * Description: This function prints the size of various types on the computer
+ * it is compiled and run on. It uses the `sizeof` operator and
+ * the `printf` function to display the sizes.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
