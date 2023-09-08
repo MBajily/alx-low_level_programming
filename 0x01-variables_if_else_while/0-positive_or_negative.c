@@ -19,10 +19,10 @@
 int main(void)
 {
 	int n;
-	srand(time(0));/* Seed the random number generator with the current time*/ 
-	n = rand() - RAND_MAX / 2; /* Generate a random number between -100 and 100*/
+	srand(time(0)); /* Seed the random number generator with the current time*/ 
+	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	printf("%d is ", n);	
+	printf("%d is ", n);
 	if (n > 0)
 	{
 		printf("positive\n");
