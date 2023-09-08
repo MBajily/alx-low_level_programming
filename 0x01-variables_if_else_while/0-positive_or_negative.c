@@ -8,8 +8,7 @@
 int main(void)
 {
 	int n;
-	srand(time(0));/* Seed the random number generator with the current time*/ 
-	n = rand(); /* Generate a random number between -100 and 100*/
+	srand(time(0));/* Seed the random number generator with the current time*/
 	printf("%d is ", n);
 	
 	if (n > 0)
