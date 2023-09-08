@@ -5,13 +5,14 @@
 /*
  * Positive, negative, zero
  *
- *
+ * Return: Always 0 (Success)
  * print which one
  */
 int main(void)
 {
 	int n;
 	srand(time(0));
+
 	n = rand() - RAND_MAX / 2;
 	printf("%d is ", n);
 	if (n > 0)
