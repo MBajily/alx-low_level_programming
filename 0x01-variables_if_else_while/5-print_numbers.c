@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point of the program
- * 
+ *
  * Description: This program prints all single-digit numbers
  * of base 10, starting from 0,
  * followed by a newline character. It uses the putchar
