@@ -19,22 +19,16 @@
  */
 int main(void)
 {
-	char lowercase;
-	char uppercase;
+	char letter;
 	
-	/* Print lowercase alphabet */
-	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar(lowercase);
+		putchar(letter);
 	}
-	/* Print newline character */
-	putchar('\n');
-	/* Print uppercase alphabet */
-	for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
+	for (letter = 'A'; letter <= 'Z'; letter++)
 	{
-		putchar(uppercase);
+		putchar(letter);
 	}
-	/* Print newline character */
 	putchar('\n');
 	return (0);
 }
