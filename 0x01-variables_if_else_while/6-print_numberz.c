@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+
+/**
+ * main - Entry point of the program
+ *
+ * Description: This program prints all single-digit
+ * numbers of base 10 starting from 0,
+ * followed by a newline character. It achieves this by
+ * utilizing the ASCII values and the `putchar` function
+ * to print each digit sequentially without using variables
+ * of type `char`. The digits are obtained by adding the
+ * respective value to the ASCII
+ * value of the character '0'.
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	putchar('0' + 0);
+	putchar('0' + 1);
+	putchar('0' + 2);
+	putchar('0' + 3);
+	putchar('0' + 4);
+	putchar('0' + 5);
+	putchar('0' + 6);
+	putchar('0' + 7);
+	putchar('0' + 8);
+	putchar('0' + 9);
+	putchar('\n');
+	return (0);
+}
