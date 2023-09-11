@@ -6,7 +6,7 @@
  * Description: This program prints all the numbers
  * of base 16 (hexadecimal) in lowercase, followed by a new line.
  *
- * It achieves this by using two `for` loops. The first 
+ * It achieves this by using two `for` loops. The first
  * loop iterates from '0' to '9' and the second loop iterates
  * from 'a' to 'f'.
  * Within each loop, the `putchar` function is used to print
