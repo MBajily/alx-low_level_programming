@@ -25,7 +25,7 @@ int main(void)
 {
 	int digit1, digit2, digit3;
 
-	for (digit1 = 48; digit1 <= 54; digit1++)
+	for (digit1 = 48; digit1 <= 55; digit1++)
 	{
 		for (digit2 = digit1 + 1; digit2 <= 56; digit2++)
 		{
@@ -34,7 +34,7 @@ int main(void)
 				putchar(digit1);
 				putchar(digit2);
 				putchar(digit3);
-				if (digit1 != 54 || digit2 != 56 || digit3 != 57)
+				if (digit1 != 55 || digit2 != 56 || digit3 != 57)
 				{
 					putchar(44);
 					putchar(32);
