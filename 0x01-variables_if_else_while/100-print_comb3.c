@@ -4,16 +4,19 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program prints all possible different combinations of two digital
+ * Description: This program prints all possible different
+ * combinations of two digital
  * in ascending order, separated by a comma and a space. It achieves this
  * by utilizing nested loops and the `putchar` function. The outer loop
  * iterates from the ASCII code of '0' to the ASCII code of '8', and the
  * inner loop iterates from the ASCII code of the digit next to the current
  * outer loop digit to the ASCII code of '9'. Within each iteration, it uses
  * `putchar` to print the corresponding characters. After printing each digit
- * combination, a comma and a space are printed, except for the last combination.
+ * combination, a comma and a space are printed, except for
+ * the last combination.
  *
- * Finally, a newline character is printed using another `putchar` call to create
+ * Finally, a newline character is printed using another
+ * `putchar` call to create
  * a new line.
  *
  * Return: Always 0 (Success)
