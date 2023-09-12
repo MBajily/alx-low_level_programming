@@ -38,7 +38,7 @@ void print_fibonacci_numbers(int n)
  * Return: 0 if the program executed successfully,
  * 1 otherwise.
  */
-int main(int argc, char *argv[])
+int main(char *argv[])
 {
 	int n;
 
