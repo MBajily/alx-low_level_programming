@@ -41,7 +41,7 @@ int print_last_digit(int number)
 	}
 	else if (l == 9)
 	{
-		return (99);         
+		return (99);
 	}
 	return (0);
 }
