@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 
-/** 
+/**
  * times_table - Function to generate and
  * print the multiplication table for the
  * number 9
  *
  * Return: 0
  */
-void times_table()
+void times_table(void)
 {
 	int i;
 	int j;
