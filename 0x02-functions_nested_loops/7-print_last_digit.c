@@ -55,4 +55,5 @@ int print_last_digit(int number)
 	{
 		return (99);         
 	}
+	return (0);
 }
