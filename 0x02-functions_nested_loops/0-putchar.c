@@ -2,13 +2,13 @@
 
 
 /**
- * Entry point of the program.
+ * main - Entry point of the program.
  *
  * Prints "_putchar" followed by a new line.
  *
  * Returns 0 to indicate successful execution.
  */
-int main()
+int main(void)
 {
 	printf("_putchar\n");
 	return (0);
