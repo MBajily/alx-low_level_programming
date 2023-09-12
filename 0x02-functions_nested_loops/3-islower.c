@@ -6,7 +6,7 @@
  * @return 1 if the character is a
  * lowercase letter, 0 otherwise.
  *
- * Return 1, 0
+ * Return: 1 if c is lowercase, 0 otherwise
  */
 int _islower(int c)
 {
