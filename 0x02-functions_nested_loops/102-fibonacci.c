@@ -38,10 +38,11 @@ void print_fibonacci_numbers(int n)
  * Return: 0 if the program executed successfully,
  * 1 otherwise.
  */
-int main(char *argv[])
+int main(int argc, char *argv[])
 {
 	int n;
 
+	argc = argc
 	n = atoi(argv[1]);
 	print_fibonacci_numbers(n);
 	return (0);
