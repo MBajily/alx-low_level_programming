@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 {
 	int n;
 
-	argc = argc
+	argc = argc;
 	n = atoi(argv[1]);
 	print_fibonacci_numbers(n);
 	return (0);
