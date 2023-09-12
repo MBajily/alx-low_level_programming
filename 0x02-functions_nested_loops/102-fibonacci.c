@@ -17,11 +17,11 @@ void print_fibonacci_numbers(int n)
 
 	a = 1;
 	b = 1;
-	printf("%llu, %llu", a, b);
+	printf("%lu, %lu", a, b);
 	for (i = 3; i <= n; i++)
 	{
 		c = a + b;
-		printf(", %llu", c);
+		printf(", %lu", c);
 		a = b;
 		b = c;
 	}
