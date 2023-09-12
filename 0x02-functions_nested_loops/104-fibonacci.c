@@ -11,19 +11,19 @@
 int main(void)
 {
 	int count;
-	unsigned int a, b, c;
-	
+	unsigned int a, b, temp;
+
 	count = 2;
 	a = 1;
 	b = 2;
 	printf("1, 2");
 	while (count < 98)
 	{
-		c = a + b;
-		printf(", %u", c);
+		unsigned int temp = a;
 		a = b;
-		b = c;
+		b = temp + b;
 		count++;
+		printf(", %u", b);
 	}
 	printf("\n");
 	return (0);
