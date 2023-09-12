@@ -2,13 +2,13 @@
 
 
 /**
- * Prints the last digit of a number and
+ * print_last_digit - Prints the last digit of a number and
  * returns its value.
  *
- * @param number The number from which to
+ * @number: The number from which to
  * extract the last digit.
  *
- * @return The value of the last digit.
+ * Return: The value of the last digit.
  */
 int print_last_digit(int number)
 {
