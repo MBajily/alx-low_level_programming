@@ -6,7 +6,8 @@
  *
  * Prints "_putchar" followed by a new line.
  *
- * Return 0 to indicate successful execution.
+ * @Return 0 to indicate successful execution.
+ *
  */
 int main(void)
 {
