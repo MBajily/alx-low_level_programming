@@ -17,5 +17,5 @@ int print_last_digit(int number)
 	last_digit = number % 10;
 	last_digit = last_digit * 10 + last_digit;
 	printf("%2d", last_digit);
-	return 0;
+	return ("");
 }
