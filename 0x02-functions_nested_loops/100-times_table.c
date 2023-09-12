@@ -9,7 +9,7 @@
  *
  * Return: 0 if n is invalid
  * (less than or equal to 0 or greater than 15),
- * 1 otherwise.  
+ * 1 otherwise.
  */
 void print_times_table(int n)
 {
@@ -24,7 +24,14 @@ void print_times_table(int n)
 	{
 		for (j = 0; j <= n; j++)
 		{
-			printf("%4d", i * j);
+			if (j == 0)
+			{
+				printf("%d,", i * j);
+			}
+			else
+			{
+				printf("%4d,", i * j);
+			}
 		}
 		printf("\n");
 	}
