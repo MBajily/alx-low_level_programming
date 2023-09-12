@@ -15,17 +15,9 @@ int print_last_digit(int number)
 	int l;
 
 	l = number % 10;
-	if (l == 0)
-	{
-		return (00);
-	}
-	else if (l == 1)
+	if (l == 1)
 	{
 		return (11);
-	}
-	else if (l == 2)
-	{
-		return (22);
 	}
 	else if (l == 3)
 	{
@@ -38,10 +30,6 @@ int print_last_digit(int number)
 	else if (l == 5)
 	{
 		return (55);
-	}
-	else if (l == 6)
-	{
-		return (66);
 	}
 	else if (l == 7)
 	{
