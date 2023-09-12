@@ -8,6 +8,7 @@ void print_alphabet_x10(void);
 int _putchar(int c);
 int print_sign(int n);
 int _isalpha(int c);
+int _abs(int);
 
 #endif
 /* MAIN_H */

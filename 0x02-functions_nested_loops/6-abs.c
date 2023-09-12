@@ -1,10 +1,10 @@
 /**
- * Computes the absolute value of an integer.
+ * _abs - Computes the absolute value of an integer.
  *
- * @param num The integer for which the absolute
+ * @num: The integer for which the absolute
  * value is to be computed.
  *
- * @return The absolute value of the input integer.
+ * Return: The absolute value of the input integer.
  */
 int _abs(int num)
 {
