@@ -3,7 +3,7 @@
  * and return the result
  * @a: first number
  * @b: second number
- * Reutn: sum
+ * Return: sum
  */
 int add(int a, int b)
 {
