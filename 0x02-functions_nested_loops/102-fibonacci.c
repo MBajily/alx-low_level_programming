@@ -42,11 +42,6 @@ int main(int argc, char *argv[])
 {
 	int n;
 
-	if (argc != 2)
-	{
-		printf("Usage: %s <n>\n", argv[0]);
-		return (1);
-	}
 	n = atoi(argv[1]);
 	print_fibonacci_numbers(n);
 	return (0);
