@@ -4,8 +4,8 @@
 /**
  * jack_bauer - Prints every minute of the day of Jack Bauer,
  * starting from 00:00 to 23:59.
- * @hour: The function iterates through each hour
- * @minute: (0 to 23) and each minute (0 to 59)
+ * The function iterates through each hour
+ * (0 to 23) and each minute (0 to 59)
  * using nested loops.
  *
  * Return: It prints the hour and minute in the format
