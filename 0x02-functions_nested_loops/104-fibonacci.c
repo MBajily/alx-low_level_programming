@@ -19,7 +19,7 @@ int main(void)
 	printf("1, 2");
 	while (count < 98)
 	{
-		unsigned int temp = a;
+		temp = a;
 		a = b;
 		b = temp + b;
 		count++;
