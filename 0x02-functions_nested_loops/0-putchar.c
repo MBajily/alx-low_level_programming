@@ -12,6 +12,6 @@
 int main(void)
 {
 	printf("_putchar\n");
-	// dsgjsldgks sfg asf
+	/* dsgjsldgks sfg asf */
 	return (0);
 }
