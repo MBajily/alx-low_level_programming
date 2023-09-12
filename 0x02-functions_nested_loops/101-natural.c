@@ -15,7 +15,6 @@ int calculate_sum(int limit)
 {
 	int sum;
 	int i;
-	int limit;
 
 	sum = 0;
 	for (i = 1; i < limit; i++)
