@@ -7,7 +7,7 @@
  * Prints "_putchar" followed by a new line.
  *
  * @Return 0 to indicate successful execution
- * return: the program shnuld return 0
+ * Return: 0
  */
 int main(void)
 {
