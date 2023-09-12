@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 
 /**
  * print_fibonacci_numbers - Prints the first n
@@ -41,6 +41,7 @@ void print_fibonacci_numbers(int n)
 int main(int argc, char *argv[])
 {
 	int n;
+
 	if (argc != 2)
 	{
 		printf("Usage: %s <n>\n", argv[0]);
