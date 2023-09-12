@@ -23,6 +23,10 @@ void times_table(void)
 			{
 				printf("%2d", result);
 			}
+			else if (j == 0)
+			{
+				printf("%d", result);
+			}
 			else
 			{
 				printf("%2d, ", result);
