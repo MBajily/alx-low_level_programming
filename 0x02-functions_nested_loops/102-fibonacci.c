@@ -12,7 +12,7 @@
  */
 void print_fibonacci_numbers(int n)
 {
-	unsigned long long int a, b, c;
+	unsigned long int a, b, c;
 	int i;
 
 	a = 1;
