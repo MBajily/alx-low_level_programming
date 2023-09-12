@@ -32,12 +32,12 @@ int calculate_sum(int limit)
  * main - Computes and prints the sum of
  * all the multiples of 3 or 5 below a given limit.
  *
- * @limit: The upper limit (excluded) of
+ * The upper limit (excluded) of
  * the numbers to consider.
  *
  * Return: 0 upon successful execution.
  */
-int main()
+int main(void)
 {
 	int limit;
 	int sum;
