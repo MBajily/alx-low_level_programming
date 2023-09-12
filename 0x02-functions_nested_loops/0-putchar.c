@@ -6,8 +6,8 @@
  *
  * Prints "_putchar" followed by a new line.
  *
- * @Return 0 to indicate successful execution.
- *
+ * @Return 0 to indicate successful execution
+ * @return The absolute value of the input integer.
  */
 int main(void)
 {
