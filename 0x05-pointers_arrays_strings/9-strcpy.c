@@ -4,7 +4,7 @@
 /**
  * *_strcpy - copies the string pointed
  * to by src
- * 
+ *
  * @dest: pointer to the buffer
  * @src: string to be copied
  *
