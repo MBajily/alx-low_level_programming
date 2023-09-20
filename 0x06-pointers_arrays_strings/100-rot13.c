@@ -10,8 +10,8 @@
 char *rot13(char *s)
 {
 	int i, j;
-	char a[52];
-	char b[52];
+	char;
+	char;
 
 	a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
