@@ -10,8 +10,8 @@
 char *rot13(char *s)
 {
 	int i, j;
-	char;
-	char;
+	char a;
+	char b;
 
 	a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	b = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
