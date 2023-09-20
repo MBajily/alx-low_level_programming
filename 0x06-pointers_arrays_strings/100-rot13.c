@@ -10,11 +10,9 @@
 char *rot13(char *s)
 {
 	int i, j;
-	char a;
-	char b;
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	b = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; a[j] != '\0'; j++)
