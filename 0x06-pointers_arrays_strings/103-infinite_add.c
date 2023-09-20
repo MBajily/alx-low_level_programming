@@ -28,7 +28,7 @@ void rev_string(char *n)
 
 
 /**
- * infinite_add - add 2 numbers together
+ * *infinite_add - add 2 numbers together
  *
  * @n1: text representation of 1st
  * number to add
