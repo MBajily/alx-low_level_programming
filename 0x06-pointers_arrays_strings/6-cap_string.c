@@ -12,7 +12,8 @@
 char *cap_string(char *s)
 {
 	int index, speIndex;
-	char spe[13] = {' ', '\t', '\n', ',', ';', '.'};
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}'};
 
 	spe += {'!', '?', '"', '(', ')', '{', '}'};
 	for (index = 0; s[index] != '\0'; index++)
