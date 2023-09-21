@@ -6,11 +6,14 @@
  * word of a string
  *
  * @s: string to modify
- * 
+ *
  * Return: the resulting string
  */
 char *cap_string(char *s)
 {
+
+
+
 	int i, j;
 	char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
