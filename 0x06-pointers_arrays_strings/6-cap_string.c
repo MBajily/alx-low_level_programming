@@ -5,7 +5,7 @@
  * *cap_string - capitalizes everey
  * word of a string
  *
- * @*s: string to modify
+ * @s: string to modify
  *
  * Return: the resulting string
  */
