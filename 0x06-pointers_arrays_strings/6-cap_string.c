@@ -11,20 +11,20 @@
  */
 char *cap_string(char *s)
 {
-	int i, j;
+	int index, speIndex;
 	char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (index = 0; s[index] != '\0'; index++)
 	{
-		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
-			s[i] -= 32;
-		for (j = 0; j < 13; j++)
+		if (index == 0 && s[index] >= 'a' && s[index] <= 'z')
+			s[index] -= 32;
+		for (speIndex = 0; speIndex < 13; speIndex++)
 		{
-			if (s[i] == spe[j])
+			if (s[index] == spe[speIndex])
 			{
-				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				if (s[index + 1] >= 'a' && s[index + 1] <= 'z')
 				{
-					s[i + 1] -= 32;
+					s[index + 1] -= 32;
 				}
 			}
 		}
