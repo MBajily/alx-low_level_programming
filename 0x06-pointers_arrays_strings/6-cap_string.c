@@ -2,7 +2,7 @@
 
 
 /**
- * *cap_string - capitalizes everey
+ * *cap_string - capitalizes every
  * word of a string
  *
  * @s: string to modify
@@ -11,9 +11,6 @@
  */
 char *cap_string(char *s)
 {
-
-
-
 	int i, j;
 	char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
