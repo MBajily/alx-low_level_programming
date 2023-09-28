@@ -2,48 +2,31 @@
 #include <stdlib.h>
 
 /**
- * print_fibonacci_numbers - Prints the first n
+ * main - Prints the first n
  * Fibonacci numbers, separated by a comma and
  * a space.
  *
- * @n: The number of Fibonacci numbers to print.
- *
- * Return: None.
+ * Return: zero
  */
-void print_fibonacci_numbers(int n)
+int main(void)
 {
-	unsigned long int a, b, c;
-	int i;
+	long int i, j, k, next;
 
-	a = 1;
-	b = 1;
-	printf("%lu, %lu", a, b);
-	for (i = 3; i <= n; i++)
+	j = 1;
+	k = 2;
+	for (i = 1; i <= 50; ++i)
 	{
-		c = a + b;
-		printf(", %lu", c);
-		a = b;
-		b = c;
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		}
+		else
+		{
+			printf("%ld\n", j);
+		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
-	printf("\n");
-}
-
-
-/**
- * main - Entry point of the program.
- * @argc: The number of command-line arguments.
- * @argv: An array of strings containing the
- * command-line arguments.
- *
- * Return: 0 if the program executed successfully,
- * 1 otherwise.
- */
-int main(int argc, char *argv[])
-{
-	int n;
-
-	argc = argc;
-	n = atoi(argv[1]);
-	print_fibonacci_numbers(n);
 	return (0);
 }
