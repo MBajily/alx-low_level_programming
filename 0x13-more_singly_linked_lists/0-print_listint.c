@@ -12,15 +12,15 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *poin;
+	const listint_t *tp;
 	unsigned int cent = 0;
 
-	poin = h;
-	while (poin)
+	tp = h;
+	while (tp)
 	{
-		printf("%d\n", poin->n);
+		printf("%d\n", tp->n);
 		cent++;
-		poin = poin->next;
+		tp = tp->next;
 	}
 	return (cent);
 }
