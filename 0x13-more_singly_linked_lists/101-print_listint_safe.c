@@ -5,7 +5,7 @@ size_t print_listint_safe(const listint_t *head)
 {
 	size_t number = 0;
 	long int different;
-	
+
 	while (head)
 	{
 		different = head - head->next;
