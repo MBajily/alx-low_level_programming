@@ -23,7 +23,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	if (index == 0)
 	{
-		head = (*head)->next;
+		*head = (*head)->next;
 		free(tp);
 		return (1);
 	}
