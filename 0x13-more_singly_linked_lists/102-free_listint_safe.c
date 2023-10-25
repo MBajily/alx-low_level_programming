@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 
 /**
  * free_listint_safe - a function that frees
@@ -31,7 +31,6 @@ size_t free_listint_safe(listint_t **h)
 		}
 		else
 		{
-			free(*h);
 			*h = NULL;
 			l++;
 			break;
