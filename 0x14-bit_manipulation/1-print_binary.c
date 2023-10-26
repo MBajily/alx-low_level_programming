@@ -17,6 +17,7 @@ void print_binary(unsigned long int n)
 	for (i = 63; i >= 0; i--)
 	{
 		crnt = n >> i;
+
 		if (crnt & 1)
 		{
 			count++;
@@ -31,5 +32,6 @@ void print_binary(unsigned long int n)
 	{
 		putchar('0');
 	}
+
 	return;
 }
