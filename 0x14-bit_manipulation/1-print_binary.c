@@ -21,16 +21,16 @@ void print_binary(unsigned long int n)
 		if (crnt & 1)
 		{
 			count++;
-			_putchar('1');
+			putchar('1');
 		}
 		else if (count)
 		{
-			_putchar('0');
+			putchar('0');
 		}
 	}
 	if (!count)
 	{
-		_putchar('0');
+		putchar('0');
 	}
 	return;
 }
