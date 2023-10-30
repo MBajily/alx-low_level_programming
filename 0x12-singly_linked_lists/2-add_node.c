@@ -1,7 +1,7 @@
-#include "main.h"
+#include "lists.h"
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <string.h>
 
 /**
  * *_strchr - a function that adds a new node
@@ -19,10 +19,14 @@ list_t *add_node(list_t **head, const char *str)
 	unsigned int length = 0;
 	
 	while (str[length])
+	{
 		length++;
+	}
 	newNode = malloc(sizeof(list_t));
 	if (!newNode)
+	{
 		return (NULL);
+	}
 	newNode->str = strdup(str);
 	newNode->length = length;
 	newNode->next = (*head);
