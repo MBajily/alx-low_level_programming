@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
 
 /**
@@ -38,7 +37,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	tp->len = length;
 	tp->next = NULL;
-
 	if (*head == NULL)
 	{
 		*head = tp;
@@ -50,7 +48,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (tp2->next)
 	{
 		tp2 = tp2->next;
-		tp2->next = tp;
 	}
+	tp2->next = tp;
 	return (tp);
 }
