@@ -15,7 +15,7 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	unsigned in length;
+	unsigned int length;
 	list_t *tp, *tp2;
 
 	length = 0;
