@@ -1,10 +1,10 @@
-#include "lists.h"
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
+#include "lists.h"
+
 
 /**
- * *_strchr - a function that adds a new node
+ * *add_node - a function that adds a new node
  * at the beginning of a list_t list.
  *
  * @str: new string
