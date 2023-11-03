@@ -11,6 +11,21 @@ void close_file(int fd);
  * *create_buffer - a program that copies the
  * content of a file to another file.
  */
+char *create_buffer(char *file)
+{
+	char *buf;
+
+	buf = malloc(sizeof(char) * 1024);
+	if (buf == NULL)
+	{
+		dprintf(STDERR_FILENO,
+			"Error: Can't write to %s\n", file);
+		exit(99);
+	}
+	return (buf);
+}
+
+
 void close_file(int fd)
 {
 	int closee;
@@ -41,14 +56,16 @@ int main(int argc, char *argv[])
 	do {
 		if (from == -1 || readd == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO,
+				"Error: Can't read from file %s\n", argv[1]);
 			free(buf);
 			exit(98);
 		}
 		writee = write(to, buf, readd);
 		if (to == -1 || writee == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO,
+				"Error: Can't write to %s\n", argv[2]);
 			free(buf);
 			exit(99);
 		}
