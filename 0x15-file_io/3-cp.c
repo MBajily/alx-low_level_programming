@@ -55,8 +55,7 @@ int main(int argc, char *argv[])
 		}
 		readd = read(from, buf, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
-	}
-	while (readd > 0);
+	} while (readd > 0);
 	free(buf);
 	close_file(from);
 	close_file(to);
