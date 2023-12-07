@@ -5,7 +5,7 @@
  * print_dlistint - a function that prints
  * all the elements of a dlistint_t list.
  *
- * @h: list head 
+ * @h: list head
  *
  * Return: nods number
  */
