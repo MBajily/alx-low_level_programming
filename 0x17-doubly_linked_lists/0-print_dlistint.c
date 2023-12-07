@@ -11,8 +11,9 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	int x = 0;
-
+	int x; 
+	
+	x = 0;
 	if (h == NULL)
 	{
 		return (x);
