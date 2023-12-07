@@ -2,8 +2,8 @@
 
 
 /**
- * add_dnodeint_end - Write a function that adds
- * a new node at the end of a dlistint_t list. 
+ * add_dnodeint_end - a function that adds
+ * a new node at the end of a dlistint_t list.
  *
  * @head: list head
  * @n: the element
