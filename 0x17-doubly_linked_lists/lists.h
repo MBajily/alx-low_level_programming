@@ -4,6 +4,15 @@
 #include <stdio.h>
 
 
+/**
+ * struct dlistint_s - 0x17: C Doubly linked lists
+ *
+ * @prev: previous node
+ * @next: next node
+ * @n: number
+ *
+ * Description: Doubly Linked List
+ */
 typedef struct dlistint_s
 {
 	int n;
