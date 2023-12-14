@@ -1,7 +1,7 @@
 #include "main.h"
 
 
-int _isdigit(int c)
+int _isdigit(char *c)
 {
 	int i;
 
@@ -20,7 +20,7 @@ int _isdigit(int c)
 }
 
 
-int _isalpha(int c)
+int _isalpha(char *c)
 {
 	int i;
 
