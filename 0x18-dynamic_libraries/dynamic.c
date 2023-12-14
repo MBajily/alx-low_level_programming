@@ -1,16 +1,17 @@
 #include "main.h"
 
-int _isdigit(char *str)
+
+int _isdigit(int c)
 {
 	int i;
 
-	if (str == NULL)
+	if (c == NULL)
 	{
 		return (0);
 	}
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; c[i] != '\0'; i++)
 	{
-		if (!(str[i] >= '0' && str[i] <= '9'))
+		if (!(c[i] >= '0' && c[i] <= '9'))
 		{
 			return (0);
 		}
@@ -19,17 +20,17 @@ int _isdigit(char *str)
 }
 
 
-int _isalpha(char *str)
+int _isalpha(int c)
 {
 	int i;
 
-	if (str == NULL)
+	if (c == NULL)
 	{
 		return (0);
 	}
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; c[i] != '\0'; i++)
 	{
-		if ((str[i] < '0' || str[i] > '9'))
+		if ((c[i] < '0' || c[i] > '9'))
 		{
 			return (1);
 		}
@@ -37,21 +38,19 @@ int _isalpha(char *str)
 	return (0);
 }
 
-
-size_t _strlen(const char *str)
+int _strlen(char *s)
 {
 	size_t len;
 
 	len = 0;
-	while (str[len] != '\0')
+	while (s[len] != '\0')
 	{
 		len++;
 	}
 	return (len);
 }
 
-
-void _strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
@@ -64,18 +63,17 @@ void _strcpy(char *dest, const char *src)
 }
 
 
-int _strcmp(const char *str1, const char *str2)
+int _strcmp(char *s1, char *s2)
 {
-	while (*str1 != '\0' && *str1 == *str2)
+	while (*s1 != '\0' && *s1 == *s2)
 	{
-		str1++;
-		str2++;
+		s1++;
+		s2++;
 	}
-	return (*str1 - *str2);
+	return (*s1 - *s2);
 }
 
-
-void _strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
 	int frs = 0;
 	int snd = 0;
