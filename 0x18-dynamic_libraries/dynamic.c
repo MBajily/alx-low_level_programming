@@ -64,16 +64,6 @@ void _strcpy(char *dest, const char *src)
 }
 
 
-char _str_duplicate(const char *str)
-{
-	size_t len;
-	char *new_string;
-
-	len = _strlen(str) + 1;
-	new_string = (char *)malloc(len);
-	_strcpy(new_string, str);
-}
-
 int _strcmp(const char *str1, const char *str2)
 {
 	while (*str1 != '\0' && *str1 == *str2)
