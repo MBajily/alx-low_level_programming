@@ -1,6 +1,6 @@
 #include "main.h"
 
-int is_digit(char *str)
+int _isdigit(char *str)
 {
 	int i;
 
@@ -19,7 +19,7 @@ int is_digit(char *str)
 }
 
 
-int is_letter(char *str)
+int _isalpha(char *str)
 {
 	int i;
 
@@ -37,7 +37,8 @@ int is_letter(char *str)
 	return (0);
 }
 
-size_t _str_length(const char *str)
+
+size_t _strlen(const char *str)
 {
 	size_t len;
 
@@ -49,7 +50,8 @@ size_t _str_length(const char *str)
 	return (len);
 }
 
-void _str_copy(char *dest, const char *src)
+
+void _strcpy(char *dest, const char *src)
 {
 	int i = 0;
 
@@ -61,30 +63,26 @@ void _str_copy(char *dest, const char *src)
 	dest[i] = '\0';
 }
 
-char *_str_duplicate(const char *str)
+
+char _str_duplicate(const char *str)
 {
 	size_t len;
 	char *new_string;
 
-	len = _str_length(str) + 1;
+	len = _strlen(str) + 1;
 	new_string = (char *)malloc(len);
-	if (new_string == NULL)
-	{
-		return (NULL);
-	}
-	_str_copy(new_string, str);
-	return (new_string);
+	_strcpy(new_string, str);
 }
 
 int _strcmp(const char *str1, const char *str2)
 {
 	while (*str1 != '\0' && *str1 == *str2)
 	{
-		str1++;
-		str2++;
+		str1++;   str2++;
 	}
 	return (*str1 - *str2);
 }
+
 
 void _strcat(char *dest, const char *src)
 {

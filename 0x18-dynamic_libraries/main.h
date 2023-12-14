@@ -9,13 +9,13 @@
 
 extern char **environ;
 
-int is_letter(char *str);
-int is_digit(char *str);
+int _isletter(char *str);
+int _isdigit(char *str);
 int _strcmp(const char *str1, const char *str2);
 void _strcat(char *dest, const char *src);
-char *_str_duplicate(const char *str);
-size_t _str_length(const char *str);
-void _str_copy(char *dest, const char *src);
+char _str_duplicate(const char *str);
+size_t _strlen(const char *str);
+void _strcpy(char *dest, const char *src);
 void _strcat(char *dest, const char *src);
 
 #endif /* MAIN_H */
