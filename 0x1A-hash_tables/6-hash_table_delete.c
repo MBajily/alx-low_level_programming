@@ -1,4 +1,4 @@
-#include "h_tables.h"
+#include "hash_tables.h"
 
 /**
  * hash_table_delete - a function that deletes
@@ -10,13 +10,13 @@ void hash_table_delete(hash_table_t *ht)
 {
 	hash_table_t *head = ht;
 	hash_node_t *nd, *tp;
-	unsigned long int i;
+	unsigned long int j;
 
-	for (i = 0; i < ht->size; i++)
+	for (j = 0; j < ht->size; i++)
 	{
-		if (ht->array[i] != NULL)
+		if (ht->array[j] != NULL)
 		{
-			nd = ht->array[i];
+			nd = ht->array[j];
 			while (nd != NULL)
 			{
 				tp = nd->next;
