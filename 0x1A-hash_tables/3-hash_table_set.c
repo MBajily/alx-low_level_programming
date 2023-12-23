@@ -3,7 +3,7 @@
 /**
  * hash_table_set - a function that adds an
  * element to the hash table.
- * 
+ *
  * @ht: pointer to hash table.
  * @key: key.
  * @value: value.
