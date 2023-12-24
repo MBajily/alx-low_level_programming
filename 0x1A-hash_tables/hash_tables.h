@@ -5,7 +5,13 @@
 #include <string.h>
 #include <stdlib.h>
 
-
+ /**
+  * struct hash_node_s - Node of a hash table
+  *
+  * @key: The key
+  * @value: The value
+  * @next: A pointer
+  */
 typedef struct hash_node_s
 {
 	char *value;
@@ -14,12 +20,28 @@ typedef struct hash_node_s
 } hash_node_t;
 
 
+/**
+ * struct hash_table_s - Hash table data structure
+ *
+ * @size: The size
+ * @array: An array
+ */
 typedef struct hash_table_s
 {
 	unsigned long int size;
 	hash_node_t **array;
 } hash_table_t;
 
+
+/**
+ * struct shash_node_s - Node of a sorted hash table
+ *
+ * @key: The key
+ * @value: The value
+ * @next: A pointer
+ * @sprev: A pointer to previous element
+ * @snext: A pointer to the next element
+ */
 typedef struct shash_node_s
 {
 	char *key;
@@ -29,6 +51,15 @@ typedef struct shash_node_s
 	struct shash_node_s *snext;
 } shash_node_t;
 
+
+/**
+ * struct shash_table_s - Sorted hash table data structure
+ *
+ * @size: The size of the array
+ * @array: An array
+ * @shead: A pointer
+ * @stail: A pointer to the last element
+ */
 typedef struct shash_table_s
 {
 	unsigned long int size;
@@ -37,8 +68,6 @@ typedef struct shash_table_s
 	shash_node_t *stail;
 } shash_table_t;
 
-extern shash_node_t;
-extern shash_table_t;
 
 hash_table_t *hash_table_create(unsigned long int size);
 unsigned long int hash_djb2(const unsigned char *str);
