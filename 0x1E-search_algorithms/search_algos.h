@@ -39,5 +39,11 @@ typedef struct skiplist_s
 } skiplist_t;
 
 int linear_search(int *arr, size_t size, int val);
-
+int binary_search(int *arr, size_t size, int val);
+int interpolation_search(int *arr, size_t size, int val);
+int exponential_search(int *arr, size_t size, int val);
+int advanced_binary(int *arr, size_t size, int val);
+int jump_search(int *arr, size_t size, int val);
+listint_t *jump_list(listint_t *list, size_t size, int val);
+skiplist_t *linear_skip(skiplist_t *list, int val);
 #endif
